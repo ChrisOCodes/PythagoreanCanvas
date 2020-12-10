@@ -1,0 +1,34 @@
+:root {
+	--AppHeight: 100vh;
+	--AppWidth: 100vw;
+}
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#AppWrapper {
+	height: var(--AppHeight);
+	width: var(--AppWidth);
+	display: flex;
+	flex-direction: column;
+}
+
+.canvasWrapper {
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	opacity: 0.3;
+	z-index: 1;
+}
+
+#CanvasBackground {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: var(--AppWidth);
+	height: var(--AppHeight);
+}
